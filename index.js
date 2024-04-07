@@ -115,9 +115,9 @@ var len1= data.chatinit.title.length;
 
 function showChatBot(){
     console.log(this.innerText);
-    if(this.innerText=='START CHAT'){
+    if(this.innerText=='Empezar a chatear'){
         document.getElementById('test').style.display='block';
-        document.getElementById('init').innerText='CLOSE CHAT';
+        document.getElementById('init').innerText='Cerrar Chat';
         initChat();
     }
     else{
