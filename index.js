@@ -1,111 +1,259 @@
 var data= {
     chatinit:{
-        title: ["Hello <span class='emoji'> &#128075;</span>","I am Mr. Chatbot","How can I help you?"],
-        options: ["Movies <span class='emoji'> &#128250;</span>","News","Shopping <span class='emoji'> &#128090;</span>","Music <span class='emoji'> &#127925;</span>"]
+        title: ["Hola! Soy tu asistente virtual de Zabala SAS <span class='emoji'> &#128187;</span>","¿En qué puedo ayudarte hoy?","Por favor, selecciona una de las siguientes opciones"],
+        options: ["Papeleria","Impresoras","Libros","Tecnologia"]
     },
-    movies: {
-        title:["Please select category"],
-        options:['Hollywood','Bollywood','Web Series','Others'],
+    papeleria: {
+        title:["Por favor, selecciona una de las siguientes opciones"],
+        options:["Cuadernos","Lapices","Borradores","Reglas"],
         url : {
             
         }
     },
     
-    news: {
-        title:["Today's Top 5 Headlines"],
-        options:["The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA.","The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA.","The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA."],
+    impresoras: {
+        title:["Que tipo de impresora buscas?"],
+        options:["Inyeccion de tinta","Laser","Multifuncional"],
         url : {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["https://www.youtube.com/@webhub/videos","https://www.youtube.com/@webhub/videos","https://www.youtube.com/@webhub/videos","https://www.youtube.com/@webhub/videos"]
-        }
+        }     
     },
-    shopping: {
-        title:["Thanks for your response","Welcome to shopping zone <span class='emoji'> &#128090;</span>","Please select one of the below options to proceed further"],
-        options:['Electronics','Beauty products','Mobiles','Men Fashion','Women fashion'],
+    libros: {
+        title:["De que editorial buscas libros?"],
+        options:['Norma','Panamericana'],
         url : {
             
         }
     },
-    electronics: {
-        title:["Thanks for your response","Here are some electronic items for you","Click on it to know more"],
-        options:['Televisions','Cameras','Gaming Consoles','Headphones','Speakers'],
+    tecnologia: {
+        title:["Que tipo de tecnologia buscas?"],
+        options:['Televisores','Camaras','Audifonos','Smartwatch','Tablets', 'Celulares'],
         url : {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["#","#","#","#","#"]
+            
         }
     },
-    beauty: {
-        title:["Thanks for your response","Here are some beauty products for you","Click on it to know more"],
-        options:['Make-up & Nails','Skin Care','Fragrance','Hair care'],
+    cuadernos: {
+        title:["Estos son algunos de los cuadernos disponibles"],
+        options:['Cuadernos de 100 hojas rayados','Cuadernos de 100 hojas cuadriculados','Cuadernos 5 materias','Cuadernos 3 materias'],
         url : {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["#","#","#","#"]
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/cuadernos?_q=cuadernos&map=ft","https://www.panamericana.com.co/cuadernos?_q=cuadernos&map=ft","https://www.panamericana.com.co/cuadernos?_q=cuadernos&map=ft","https://www.panamericana.com.co/cuadernos?_q=cuadernos&map=ft"]
         }
     },
-    mobiles: {
-        title:["Thanks for your response","These are some results based on your input","Click on it to know more"],
-        options:['Mobile Phones','Cases & Covers','Power Banks','Tablets'],
+    lapices: {
+        title:["Estos son algunos de los lapices disponibles"],
+        options:['Lapices de colores','Lapices de grafito','Lapices de cera','Lapices de tinta'],
         url : {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["#","#","#","#"]
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/lapices?_q=lapices&map=ft","https://www.panamericana.com.co/lapices?_q=lapices&map=ft","https://www.panamericana.com.co/lapices?_q=lapices&map=ft","https://www.panamericana.com.co/lapices?_q=lapices&map=ft"]
         }
     },
-    men: {
-        title:["Thanks for your response","These are some results based on your input","Click on it to know more"],
-        options:['Clothing','Shirts','T-shirts','Innerwear','Jeans'],
+    borradores: {
+        title:["Estos son algunos de los borradores disponibles"],
+        options:['Borradores de tinta','Borradores de goma','Borradores de plastico','Borradores de papel'],
         url : {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["#","#","#","#","#"]
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/borradores?_q=borradores&map=ft","https://www.panamericana.com.co/borradores?_q=borradores&map=ft","https://www.panamericana.com.co/borradores?_q=borradores&map=ft","https://www.panamericana.com.co/borradores?_q=borradores&map=ft"]
         }
     },
-    women: {
-        title:["Thanks for your response","These are some results based on your input","Click on it to know more"],
-        options:['Clothing','Western Wear','Ethnic Wear','Top Brands'],
+    reglas: {
+        title:["Estas son algunas de las reglas disponibles"],
+        options:['Reglas de 15 cm','Reglas de 30 cm','Reglas de 50 cm','Reglas de 1 metro'],
         url : {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["#","#","#","#"]
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/reglas?_q=reglas&map=ft","https://www.panamericana.com.co/reglas?_q=reglas&map=ft","https://www.panamericana.com.co/reglas?_q=reglas&map=ft","https://www.panamericana.com.co/reglas?_q=reglas&map=ft"]
         }
     },
-    music: {
-        title:["These are some latest songs <span class='emoji'> &#127925;</span>"],
-        options: ["song 1","song 2","song 3","song 4","song 5"],
+    inyeccion: {
+        title:["Estas son algunas de las impresoras de inyección de tinta disponibles"],
+        options: ["Impresora HP DeskJet 2135","Impresora Epson L3110","Impresora Canon Pixma G2100","Impresora Brother DCP-T310"],
         url : {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["https://www.youtube.com/@webhub/videos","https://www.youtube.com/@webhub/videos","https://www.youtube.com/@webhub/videos","https://www.youtube.com/@webhub/videos"]
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales","https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales","https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales","https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales"]
         }
     },
-    hollywood: {
-        title: ["Thanks for your response","Here are some genre based movies"],
-        options: ["Comedy","Horror","Sci-Fi","Romance","Action"],
+    laser: {
+        title: ["Estas son algunas de las impresoras laser disponibles"],
+        options: ["Impresora HP LaserJet Pro M15w","Impresora Epson EcoTank L3150","Impresora Canon imageCLASS MF3010","Impresora Brother HL-L2320D"],
         url: {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["#","#","#","#","#"]
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales","https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales","https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales","https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales"]
         }
     },
-    bollywood: {
-        title: ["Thanks for your response","Here are some genre based movies"],
-        options: ["Comedy","Horror","Sci-Fi","Romance","Action"],
+    multifuncional: {
+        title: ["Estas son algunas de las impresoras multifuncionales disponibles"],
+        options: ["Impresora HP DeskJet Ink Advantage 2135","Impresora Epson EcoTank L3150","Impresora Canon Pixma G2100","Impresora Brother DCP-T310"],
         url: {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["#","#","#","#","#"]
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales","https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales","https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales","https://www.panamericana.com.co/tecnologia/impresoras-y-suministros/impresoras-y-multifuncionales"]
         }
     },
-    web: {
-        title: ["Thanks for your response","Here are some genre based web series"],
-        options: ["Comedy","Horror","Sci-Fi","Romance","Action"],
+    norma: {
+        title: ["Estos son algunos generos de los libros de la editorial Norma"],
+        options: ["Literatura","Ciencia","Historia","Matematicas"],
         url: {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["#","#","#","#","#"]
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/libro?_q=libro&map=ft","https://www.panamericana.com.co/libro?_q=libro&map=ft","https://www.panamericana.com.co/libro?_q=libro&map=ft","https://www.panamericana.com.co/libro?_q=libro&map=ft"]
         }
     },
-    others: {
-        title: ["Here are some more options for you"],
-        options: ["YouTube","Netflix","Amazon Prime","Hot Star"],
+    panamericana: {
+        title: ["Estos son algunos generos de los libros de la editorial Panamericana"],
+        options: ["Literatura","Ciencia","Historia","Matematicas"],
         url: {
-            more:"https://www.youtube.com/",
-            link:["#","#","#","#","#"]
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/libro?_q=libro&map=ft","https://www.panamericana.com.co/libro?_q=libro&map=ft","https://www.panamericana.com.co/libro?_q=libro&map=ft","https://www.panamericana.com.co/libro?_q=libro&map=ft"]
         }
     },
+    televisores: {
+        title: ["Estas son algunas de las marcas de televisores disponibles"],
+        options: ["Samsung","LG","Sony","Panasonic"],
+        url: {
+
+        }
+    },
+    camaras: {
+        title: ["Estas son algunas de las marcas de camaras disponibles"],
+        options: ["Canon","Nikon","Sony","Panasonic"],
+        url: {
+
+        }
+    },
+    audifonos: {
+        title: ["Estas son algunas de las marcas de audifonos disponibles"],
+        options: ["Sony","JBL","Bose","Panasonic"],
+        url: {
+
+        }
+    },
+    smartwatch: {
+        title: ["Estas son algunas de las marcas de smartwatch disponibles"],
+        options: ["Apple","Samsung","Xiaomi","Huawei"],
+        url: {
+
+        }
+    },
+    tablets: {
+        title: ["Estas son algunas de las marcas de tablets disponibles"],
+        options: ["Apple","Samsung","Huawei","Lenovo"],
+        url: {
+
+        }
+    },
+    celulares: {
+        title: ["Estas son algunas de las marcas de celulares disponibles"],
+        options: ["Apple","Samsung","Xiaomi","Huawei"],
+        url: {
+
+        }
+    },
+    sony: {
+        title: ["Estos son algunos de los productos de Sony"],
+        options: ["Tv 45 pulgadas","Camara 20 megapixeles","Audifonos inalambricos","Smartwatch"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/sony?_q=sony&map=ft","https://www.panamericana.com.co/sony?_q=sony&map=ft","https://www.panamericana.com.co/sony?_q=sony&map=ft","https://www.panamericana.com.co/sony?_q=sony&map=ft"]
+        
+        }
+    },
+    samsung: {
+        title: ["Estos son algunos de los productos de Samsung"],
+        options: ["Tv 45 pulgadas","Camara 20 megapixeles","Audifonos inalambricos","Smartwatch"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/samsung?_q=samsung&map=ft","https://www.panamericana.com.co/samsung?_q=samsung&map=ft","https://www.panamericana.com.co/samsung?_q=samsung&map=ft","https://www.panamericana.com.co/samsung?_q=samsung&map=ft"]
+        
+        }
+    },
+    apple: {
+        title: ["Estos son algunos de los productos de Apple"],
+        options: ["Iphone 11","Ipad Pro","Apple Watch","Airpods"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/apple?_q=apple&map=ft","https://www.panamericana.com.co/apple?_q=apple&map=ft","https://www.panamericana.com.co/apple?_q=apple&map=ft","https://www.panamericana.com.co/apple?_q=apple&map=ft"]
+        
+        }
+    },
+    xiaomi: {
+        title: ["Estos son algunos de los productos de Xiaomi"],
+        options: ["Redmi Note 8","Mi Band 4","Airdots","Mi Box"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/xiaomi?_q=xiaomi&map=ft","https://www.panamericana.com.co/xiaomi?_q=xiaomi&map=ft","https://www.panamericana.com.co/xiaomi?_q=xiaomi&map=ft","https://www.panamericana.com.co/xiaomi?_q=xiaomi&map=ft"]
+        
+        }
+    },
+    huawei: {
+        title: ["Estos son algunos de los productos de Huawei"],
+        options: ["P30 Pro","Watch GT 2","Freebuds 3","Matebook D"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/huawei?_q=huawei&map=ft","https://www.panamericana.com.co/huawei?_q=huawei&map=ft","https://www.panamericana.com.co/huawei?_q=huawei&map=ft","https://www.panamericana.com.co/huawei?_q=huawei&map=ft"]
+        
+        }
+    },
+    nikon: {
+        title: ["Estos son algunos de los productos de Nikon"],
+        options: ["D3500","Coolpix B500","D750","D5600"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/nikon?_q=nikon&map=ft","https://www.panamericana.com.co/nikon?_q=nikon&map=ft","https://www.panamericana.com.co/nikon?_q=nikon&map=ft","https://www.panamericana.com.co/nikon?_q=nikon&map=ft"]
+        
+        }
+    },
+    canon: {
+        title: ["Estos son algunos de los productos de Canon"],
+        options: ["EOS Rebel T6","EOS 80D","PowerShot SX540","EOS 6D"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/canon?_q=canon&map=ft","https://www.panamericana.com.co/canon?_q=canon&map=ft","https://www.panamericana.com.co/canon?_q=canon&map=ft","https://www.panamericana.com.co/canon?_q=canon&map=ft"]
+        
+        }
+    },
+    jbl: {
+        title: ["Estos son algunos de los productos de JBL"],
+        options: ["JBL Flip 5","JBL Charge 4","JBL Tune 120","JBL Free X"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/jbl?_q=jbl&map=ft","https://www.panamericana.com.co/jbl?_q=jbl&map=ft","https://www.panamericana.com.co/jbl?_q=jbl&map=ft","https://www.panamericana.com.co/jbl?_q=jbl&map=ft"]
+        
+        }
+    },
+    bose: {
+        title: ["Estos son algunos de los productos de Bose"],
+        options: ["Bose SoundLink Mini II","Bose QuietComfort 35 II","Bose SoundSport Free","Bose Home Speaker 500"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/bose?_q=bose&map=ft","https://www.panamericana.com.co/bose?_q=bose&map=ft","https://www.panamericana.com.co/bose?_q=bose&map=ft","https://www.panamericana.com.co/bose?_q=bose&map=ft"]
+        
+        }
+    },
+    panasonic: {
+        title: ["Estos son algunos de los productos de Panasonic"],
+        options: ["Panasonic Lumix FZ80","Panasonic Lumix G7","Panasonic Lumix GH5","Panasonic Lumix FZ300"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/panasonic?_q=panasonic&map=ft","https://www.panamericana.com.co/panasonic?_q=panasonic&map=ft","https://www.panamericana.com.co/panasonic?_q=panasonic&map=ft","https://www.panamericana.com.co/panasonic?_q=panasonic&map=ft"]
+        
+        }
+    },
+    hp: {
+        title: ["Estos son algunos de los productos de HP"],
+        options: ["HP Pavilion 15","HP Envy 13","HP Spectre x360","HP Omen 15"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/hp?_q=hp&map=ft","https://www.panamericana.com.co/hp?_q=hp&map=ft","https://www.panamericana.com.co/hp?_q=hp&map=ft","https://www.panamericana.com.co/hp?_q=hp&map=ft"]
+        
+        }
+    },
+    epson: {
+        title: ["Estos son algunos de los productos de Epson"],
+        options: ["Epson EcoTank L3150","Epson L3110","Epson L4150","Epson L1300"],
+        url: {
+            more:"https://www.panamericana.com.co",
+            link:["https://www.panamericana.com.co/epson?_q=epson&map=ft","https://www.panamericana.com.co/epson?_q=epson&map=ft","https://www.panamericana.com.co/epson?_q=epson&map=ft","https://www.panamericana.com.co/epson?_q=epson&map=ft"]
+        
+        }
+    },         
+
 }
 
 document.getElementById("init").addEventListener("click",showChatBot);
@@ -224,7 +372,7 @@ function handleOptions(options,url){
         cbot.appendChild(opt);
     }
     var opt= document.createElement("span");
-    var inp= '<a class="m-link" href="'+url.more+'">'+'See more</a>';
+    var inp= '<a class="m-link" href="'+url.more+'">'+'mostrar mas</a>';
 
     const isObjectEmpty= (url)=>{
         return JSON.stringify(url)=== "{}";
