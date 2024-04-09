@@ -258,7 +258,7 @@ var data= {
 
 document.getElementById("init").addEventListener("click",showChatBot);
 var cbot= document.getElementById("chat-box");
-
+const botImg = document.getElementById("bot-img");
 var len1= data.chatinit.title.length;
 
 function showChatBot(){
@@ -266,6 +266,7 @@ function showChatBot(){
     if(this.innerText=='Empezar a chatear'){
         document.getElementById('test').style.display='block';
         document.getElementById('init').innerText='Cerrar Chat';
+        botImg.classList.add("opacity-0")
         initChat();
     }
     else{

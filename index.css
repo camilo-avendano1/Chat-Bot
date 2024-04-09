@@ -1,37 +1,68 @@
+:root{
+    --primaryColor: #EC6709;
+    --secondaryColor: #F5F4F4;
+    --fontColor: #F5F4F4
+}
+
 html,body{
     height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(90deg, rgba(1,1,88,0.82),rgb(1,1,29));
     transition: 1s all ease-in-out;
 }
 #init{
     margin-top: 2rem;
-    background: indianred;
+    background: black;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
-    font-size: 12px;
-    font-weight: 500;
-    color: aliceblue;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secondaryColor);
     cursor: pointer;
+    display: inline;
+    transition: 1s all ease-in-out;
+}
+#init:hover{
+    transform: scale(1.1);
+}
+.desc{
+    width: 100%;
+    background-color: var(--primaryColor);
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--fontColor);
+
 }
 .desc p{
-    color: rgb(133,153,168);
     margin: 0;
     font-weight: 600;
+    color: black;
+    width: 80%;
 }
 .text{
     font-size: 65px;
     font-weight: 800;
-    color: cadetblue;
     margin: 0;
+}
+
+.side-image-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .parent{
     position: relative;
-    height: 100%;
-    padding: 0 7rem;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,4 +204,7 @@ body{
     background: white;
     border: 1px solid blueviolet;
     color: blueviolet;
+}
+.opacity-0{
+    opacity: 0;
 }
